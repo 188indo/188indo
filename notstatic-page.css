@@ -1,0 +1,51 @@
+/* CSS Post Wrapper */
+.post {background:#fff;color:#888;margin:0 0 20px 0;padding:0 10px 0 0;border:1px solid #f0f0f0;transition:all 0.3s linear;}
+.post:hover {transition:.3s linear;}
+.post-body {line-height:1.6em;color:#888;margin-right:10px;font-size:12px;text-overflow:ellipsis;}
+h2.post-title, h1.post-title {font-family:&#39;Ruda&#39;,sans-serif;font-size:20px;font-weight:700;padding:15px 0;text-transform:none;padding-bottom:0;text-align:left;border-bottom:none;border-top:none;}
+h2.post-title:hover, h1.post-title:hover {color:#4791d2;}
+h2.post-title a, h1.post-title a, h2.post-title, h1.post-title {color:#333;z-index:0;}
+h2.post-title a:hover, h1.post-title a:hover {color:#4791d2!important;}
+.post-info {background:#fff;margin-top:0;margin-bottom:0;padding:0;margin-right:15px;margin-left:15px;color:#aaa;font-size:11px;}
+.post-info a {display:inline;background:transparent;color:#aaa;padding:5px;padding-left:0;margin-bottom:10px;transition:all .3s ease-out;}
+.post-info a:hover {background:transparent;color:#4791d2;}
+.author-info, .review-info, .comment-info, .time-info {margin-right:8px;display:inline;}
+.img-thumbnail {overflow:hidden;background:#111;position:relative;float:left;width:250px;height:170px;margin:15px;z-index:1;padding:0;transition:all .3s ease-out;}
+.img-thumbnail:hover{transition:all .3s ease-out;}
+.img-thumbnail:before {content:&quot;\f0c1&quot;;font-family:FontAwesome;font-size:30px;height:30px;
+width:30px;position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;padding-top:100px;
+color:#fff;opacity:0;visibility:hidden;-webkit-transform:translateZ(0);-webkit-backface-visibility:hidden;z-index:2;transition:all .3s ease-out;}
+.img-thumbnail:hover:before{opacity:1;visibility:visible;padding-top:0;}
+.img-thumbnail img {width:250px;height:170px;z-index:1;transition:all .3s ease-out;}
+.img-thumbnail:hover img {opacity:0.7;}
+
+/* CSS Label Info */
+.post .label-info {position:absolute;top:15px;left:15px;margin:0 auto;width:auto;z-index:1;}
+.label-info a{background:rgba(34,34,34,0.5);color:#fff;font-size:13px;display:block;
+float:left;padding:4px 12px;margin:0;transition: all .3s ease-out;}
+.label-info a:hover{background:#222;color:#fff;}
+.label-info a:nth-child(n+2){display:none;}
+
+/* CSS Read More */
+a.read-more {position:absolute;display:inline-block;bottom:15px;background-color:#f56954;color:#fff;border-left:double #fff;padding:5px 10px 4px;font-size:12px;transition:all .3s ease-out;}
+a.read-more:hover {opacity:0.9;background-color:#444;color:#fff;border-left:double #fdfdfd;}
+a.read-more:active {background:#333;color:#fff;border-left:double #fdfdfd;}
+
+/* CSS Homepage Responsive */
+@media only screen and (max-width:640px){
+h2.post-title, h1.post-title, h2.post-title a, h1.post-title a, h2.post-title, h1.post-title {font-size:18px;}
+.post-body {margin-bottom:10px;}
+a.read-more,.readm,.label-info {display:none;}
+.img-thumbnail {width:120px;height:100px;}
+.img-thumbnail img {width:120px;height:100px;}
+.img-thumbnail:before{display:none;}}
+
+@media only screen and (max-width:480px){
+h2.post-title, h1.post-title, h2.post-title a, h1.post-title a, h2.post-title, h1.post-title {font-size:16px;}
+.img-thumbnail {width:80px;height:60px;}
+.img-thumbnail img {width:80px;height:60px;}
+.img-thumbnail:before,.post-body,.post-share,.comment-info{display:none!important;visibility:hidden;width:0;height:0;}
+.post {padding:0 0 25px 0;}}
+
+@media only screen and (max-width:320px){
+h2.post-title, h1.post-title, h2.post-title a, h1.post-title a, h2.post-title, h1.post-title {font-size:14px;}}
